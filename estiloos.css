@@ -516,24 +516,13 @@ article:hover{
     color: white !important;
     text-decoration: none;
 }
-.fuentes img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
-    border-radius:10px;
-    transition:.3s;
-}
+/* ===== ICONOS DE CONAGUA, ONU Y SEMARNAT ===== */
+
 .fuentes{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:25px;
-    margin-top:10px;
-}
-.fuentes{
-    display:flex;
-    justify-content:center;
-    gap:25px;
+    gap:30px;
     margin-top:15px;
     position:relative;
     z-index:9999;
@@ -541,6 +530,7 @@ article:hover{
 
 .fuentes a{
     display:inline-block;
+    text-decoration:none;
     pointer-events:auto;
 }
 
@@ -548,5 +538,23 @@ article:hover{
     width:50px;
     height:50px;
     object-fit:contain;
+    border-radius:10px;
     cursor:pointer;
+    transition:0.3s;
+}
+
+.fuentes img:hover{
+    transform:scale(1.15);
+}
+
+/* Evita que otros elementos tapen los iconos */
+
+.encabezado{
+    position:relative;
+    z-index:1;
+}
+
+.presentacion{
+    position:relative;
+    z-index:0;
 }
