@@ -1,0 +1,532 @@
+*{
+box-sizing:border-box;	
+}
+.nuevo{
+	background-color:#yellow;
+	color:white;
+	padding: 10px 20px;
+}
+body {
+	width: 980px;
+	margin-left:auto ;
+	margin-right:auto ;
+	background-color: #D9B6D3;
+	font-family: arial;
+	font-size: 15px;
+
+}
+nav{
+	background-color:pink;
+	padding: 5px;
+	margin-top: 1px ;
+}
+li a{
+	color: white;
+}
+	li{
+		display: inline;
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 20px;
+		font-variant: small-caps;
+		font-weight: bold;
+	   }
+	  section{
+	  	background-color: #E6C3E1;
+	  	margin-top: 10px;
+	  	padding: 5px;
+	  }
+	  article{
+	  	background-color: pink;
+	  	margin-top: 5px;
+	  	padding: 10px 15px;
+	  }
+	  main{
+	  	width: 640px;
+	  	float: left;
+	  }
+	  aside{
+	  	background-color: #C995C0;
+	  	width: 330px;
+	  	float: right;
+	  	padding: 20px;
+	  	margin-top: 10px;
+	}
+	footer{
+		clear: both;
+		background-color: pink;
+		color: black;
+		padding: 5px 20px;
+	}
+	/* --- CONTROL DE TAMAÑO DE IMÁGENES --- */
+
+/* Evita que cualquier imagen se desborde */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* El logo de agua de arriba (línea 11) */
+.logo img {
+    max-width: 140px; 
+}
+
+/* Los 4 iconos de acceso rápido (líneas 39 a 52) */
+.acceso-rapido img {
+    width: 80px;      
+    height: 80px;
+    object-fit: cover; /* Evita que se deformen */
+}
+
+/* Las imágenes de los 3 artículos de noticias (plásticos, químicos y agricultura) */
+.articulos article img {
+    width: 100%;
+    max-height: 230px; 
+    object-fit: cover; /* Corta la imagen estéticamente */
+    margin-bottom: 10px;
+}
+
+/* Los iconos de redes sociales del final (líneas 121 a 123) */
+.social img {
+    width: 35px;
+    height: 35px;
+}
+/*****************************************************************
+/*------------Acceso-rapido------------*/
+.acceso-rapido{
+    background: #21bc4e;
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+}
+.acceso-rapido{
+    background: linear-gradient(135deg,#00b4db,#0083b0,#01579b);
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+    border-radius:15px;
+}
+.acceso-rapido figure{
+    display:inline-block;
+    text-align:center;
+    width:25%;
+    margin:0 -4px 0 0;
+    padding:15px 0;
+    transition:.3s;
+}
+
+.acceso-rapido figure:hover{
+    background:rgba(255,255,255,.15);
+    transform:translateY(-5px);
+}
+.acceso-rapido h2 {
+    color: #fff;
+    font-size: 1.87em;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 16px;
+}
+.acceso-rapido figure{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 -4px 0 0;
+    padding: 0px;
+}
+.acceso-rapido h3{
+   font-size: 1.1875em;
+    margin-top: 9px;
+    margin-bottom: 20px; 
+}
+.acceso-rapido h3 a{
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    font-weight: normal;
+}
+.acceso-rapido h3 a:hover{
+    text-decoration: none;
+}
+/*---------bloque contenido----------*/
+.bloque-contenido{
+    overflow: hidden; /*2
+    margin-top: 25px; /** complemenatario 6  **/
+}
+.bloque-contenido .contenedor{  /*3**/
+    display: table;  */
+}
+.articulos { /** 1 **/
+    /*float: left;  /*elim 3 */
+    background: beige;
+    width: 65%; /*elimi  3*/
+  display: table-cell;  /*3*/
+  padding-right: 30px; /* 4*/
+}
+.articulos article{  /* 10   */
+    margin-bottom: 10px;
+}
+.articulos h2{  /**4**/
+    color: #444444;
+    font-size: 1.625em;
+    border-bottom: 3px solid #0460ad;
+    padding-bottom: 25px;
+}
+.articulos img{  /**5**/
+    float: left;
+    margin-right: 10px;
+    position: relative; /*  10  */
+    top: 5px;           /*   10 */
+}
+.articulos article h1{  /**6**/
+    font-size: 1.25em;  /*20/16 = 1.25em*/
+    /*margin: 0; ** 8  *** quitar 8 poner 9*/
+    margin: 8px 0 8px 0;  /*** 9 ****/
+}
+.articulos article h1 a{  /**7**/ 
+    color: #444444;  /*HTML incluir href*/
+    text-decoration: none;
+}
+.articulos article h1 a:hover{  /**8**/ 
+    text-decoration: underline;
+}
+.articulos article p{  /** 9 **/ 
+    margin: 0;
+    text-align: justify;
+    font-size: 0.875em; /*** 14/16 = 0.875 ***/
+}
+.complementario{    /*   1  */
+    background: #0460ad;
+    width: 35%; 
+    display: table-cell; 
+    padding: 0 20px 20 px; /***2**laterales sup e inf*/
+}
+.complementario h2{   /** 2  **/
+    font-size: 1.625em;  /* 26/16 em*/ 
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+.complementario ul{   /** 3  **/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.complementario ul li{ /*** 4 ***/
+    background: url("imagen/icon.png") no-repeat left center;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+.complementario ul li a{ /*** 5 ***/
+    color: #fff;
+    text-decoration: none;
+}
+.complementario ul li a:hover{ /*** 6 ***/
+    color: red;
+    text-decoration: underline; /* ir a bloque-conteniodo*/
+}
+/***********************************************************************/
+/************** suscripcion */
+.suscripcion{  /**1***/
+    overflow: hidden;
+    border: 1px solid red;  /**2 *** elim**/
+    background: #eeeeee;   /***2***/
+    margin-top: 20PX;  /*** 2  B  ****/
+}
+.suscripcion h2{ /***2***/
+    float: left;
+    font-size: 1.625em; /*26/16  */
+    color: #444444;
+    font-weight: normal;
+}
+.suscripcion form{  /***2***/
+    float: right;
+    position: relative; /** 2 a ***/
+    top: 20px;   /***  2  a   ****/
+}
+.suscripcion form input{   /***3  ***/
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+.suscripcion form input[type="submit"]{ /*** 4   ***/
+    border: 1px solid #22314d;
+    padding: 10px;
+    background: #0460ad;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    box-shadow: 0 -1px 0px 0 #93badc insert;
+}
+.suscripcion form input[type="submit"]:hover{ /*** 5   ***/
+    background: #21bc4d;
+}
+/***********pie de pagina**************/
+.piedepagina{   /**1 **/
+    background: #444444;
+    padding: 20px 0; /*** 7  c  */
+}
+.piedepagina .contenedor{   /**2  **/
+    display: table;
+}
+.piedepagina small{  /***3  ***/
+    display: table-cell;
+    background: red;  /*  elim  7 a **/
+    color: #fff;  /** 4 **/
+}
+.piedepagina nav{ /**** 4  ***/
+    display: table-cell;
+    background: blue;  /*** elim 7 b ***/
+    text-align: right; /***6  **/
+}
+.piedepagina nav ul{ /**** 5 ***/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.piedepagina nav ul li{ /**** 6 ***/
+    display: inline-block;
+    padding-left: 10px;  /** 7  d ****/
+}
+.piedepagina nav ul li a{ /**** 7 ***/
+    color: #fff;
+    text-decoration: none;
+}
+.piedepagina nav ul li a:hover{ /**** 7 ***/
+    color: #ffff00;
+    text-decoration: underline;
+}
+/*************Redes sociales***************/
+.social{
+    position: fixed;
+    top: 30%;
+    right: 0;
+}
+.social a{
+    display: block;
+    margin-bottom: 4px;
+    opacity: 0.8;
+}
+.social a:hover{
+    opacity: 1;
+}
+.social img{
+    border-radius: 50%;
+    display: block;
+}
+.presentacion .contenedor{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.presentacion img{
+    width:250px;
+    height:auto;
+}
+/* ===== DISEÑO PROFESIONAL TEMA AGUA ===== */
+
+body{
+    background: linear-gradient(to bottom,#dff6ff,#b8e8fc,#8fd3ff) !important;
+}
+
+.encabezado{
+    background: linear-gradient(90deg,#01579b,#03a9f4);
+    border-radius:15px;
+    padding:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+nav{
+    background:#0288d1 !important;
+    border-radius:10px;
+}
+
+nav a{
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffff99;
+}
+
+section{
+    background:rgba(255,255,255,.92) !important;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    padding:15px;
+}
+
+article{
+    background:white !important;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+article:hover{
+    transform:translateY(-8px);
+}
+
+.complementario{
+    background:linear-gradient(180deg,#0288d1,#01579b) !important;
+    border-radius:15px;
+}
+
+.aprender-mas{
+    display:inline-block;
+    background:#00a8ff;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.aprender-mas:hover{
+    background:#01579b;
+    transform:scale(1.08);
+}
+
+.tarjeta{
+    display:inline-block;
+    width:30%;
+    margin:10px;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.tarjeta:hover{
+    transform:scale(1.05);
+}
+
+.estadisticas h2,
+.acciones h2,
+.progreso h2{
+    color:#01579b;
+    text-align:center;
+}
+
+.acciones ul{
+    list-style:none;
+    font-size:18px;
+}
+
+.piedepagina{
+    background:linear-gradient(90deg,#003366,#01579b) !important;
+    padding:20px 0;
+}
+
+.social img{
+    transition:.3s;
+}
+
+.social img:hover{
+    transform:scale(1.15);
+}
+/* ===== PORTADA PRINCIPAL ===== */
+
+.presentacion{
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+
+.presentacion .contenedor{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.introduccion-presentacion{
+    width:60%;
+}
+
+.introduccion-presentacion h1{
+    color:white;
+    font-size:50px;
+    margin-bottom:10px;
+    text-shadow:3px 3px 8px rgba(0,0,0,.3);
+}
+
+.introduccion-presentacion span{
+    font-size:28px;
+    color:#dff6ff;
+}
+
+.presentacion img{
+    width:220px;
+    height:auto;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,.5));
+    transition:.4s;
+}
+
+.presentacion img:hover{
+    transform:scale(1.08) rotate(5deg);
+}
+/* Logo y menú en la misma fila */
+
+.encabezado .contenedor{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo img{
+    width:150px;
+    height:auto;
+}
+
+.encabezado nav{
+    flex:1;
+    margin-left:30px;
+}
+/* Fondo degradado para Acceso rápido */
+
+.acceso-rapido{
+    background: linear-gradient(135deg, #00c6ff, #0072ff, #003f88) !important;
+    padding: 25px 0;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,.2);
+}
+
+/* Cuadros individuales */
+
+.acceso-rapido figure{
+    background: rgba(255,255,255,0.15);
+    border-radius: 15px;
+    padding: 15px;
+    transition: .3s;
+}
+
+.acceso-rapido figure:hover{
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-8px);
+}
+
+/* Texto blanco */
+
+.acceso-rapido h2,
+.acceso-rapido h3 a{
+    color: white !important;
+    text-decoration: none;
+}
+.fuentes img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+    border-radius:10px;
+    transition:.3s;
+}
+.fuentes{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin-top:10px;
+}
