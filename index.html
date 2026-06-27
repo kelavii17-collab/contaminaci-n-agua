@@ -4,6 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Proyecto contaminación del agua</title>
     <link rel="stylesheet" href="estiloos.css">
+
+<style>
+.suscripcion,.estadisticas,.acciones,.progreso,.piedepagina{
+    clear:both !important;
+    display:block;
+    width:100%;
+}
+.estadisticas,.acciones,.progreso{
+    margin-top:20px;
+}
+</style>
+
 </head>
 <body>
  <header class="encabezado" role="banner">
@@ -18,6 +30,19 @@
  				<li><a href="#">Soluciones</a></li>
  			</ul>
  		</nav>
+        <div class="fuentes">
+    <a href="https://www.gob.mx/conagua" target="_blank">
+        <img src="imagen/conagua.png" alt="CONAGUA">
+    </a>
+
+    <a href="https://www.unwater.org" target="_blank">
+        <img src="imagen/onuagua.png" alt="ONU Agua">
+    </a>
+
+    <a href="https://www.gob.mx/semarnat" target="_blank">
+        <img src="imagen/semarnat.png" alt="SEMARNAT">
+    </a>
+</div>
  	</div>
  </header>
  <!--fin-->
@@ -25,7 +50,7 @@
  	<div class="contenedor">
  		<div class="introduccion-presentacion">
  			<h1>CUIDEMOS EL AGUA <br><span>Por un futuro limpio</span></h1>
- 			<a href="https://unwater.mx" class="aprender-mas">Sauces</a>
+ 			<a href="https://unwater.mx" class="aprender-mas">Más información</a>
  		</div>
  		<img src="imagen/planeta.png" alt="planeta y agua limpia">
  	</div>
@@ -37,19 +62,19 @@
               <ul>
                 
  				<figure>
- 					<a href="#"><img src="imagen/icono1.JPG" alt="Nosotros"></a>
+ 					<a href="#"><img src="imagen/icono1.jpg" alt="Nosotros"></a>
  					<figcaption><h3><a href="#">Nosotros</a></h3></figcaption>
  				</figure>
  				<figure>
- 					<a href="#"><img src="imagen/icono2.JPG" alt="Servicio"></a>
+ 					<a href="#"><img src="imagen/icono2.jpg" alt="Servicio"></a>
  					<figcaption><h3><a href="#">Servicio</a></h3></figcaption>
  				</figure>
  				<figure>
- 					<a href="#"><img src="imagen/icono3.JPG" alt="Ubicanos"></a>
+ 					<a href="#"><img src="imagen/icono3.jpg" alt="Ubicanos"></a>
  					<figcaption><h3><a href="#">Ubicanos</a></h3></figcaption>
  				</figure>
  				<figure>
- 					<a href="#"><img src="imagen/icono4.JPG" alt="Contactanos"></a>
+ 					<a href="#"><img src="imagen/icono4.jpg" alt="Contactanos"></a>
  					<figcaption><h3><a href="#">Contactanos</a></h3></figcaption>
  				</figure>
                 </ul>
@@ -92,18 +117,74 @@
          </ul>
       </aside>
      </div>
- 	</div> 
+ 	</div>
+
+<!-- NUEVAS SECCIONES -->
+<section class="estadisticas">
+    <div class="contenedor">
+        <h2>Datos Impactantes</h2>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <h3>2,000 millones</h3>
+                <p>De personas no tienen acceso a agua potable segura.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>80%</h3>
+                <p>De las aguas residuales regresan a la naturaleza sin tratamiento.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>1 millón</h3>
+                <p>De aves marinas mueren por contaminación cada año.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="acciones">
+    <div class="contenedor">
+        <h2>¿Cómo puedes ayudar?</h2>
+        <ul>
+            <li>✅ No tirar basura en ríos y lagos.</li>
+            <li>✅ Reducir el uso de plástico.</li>
+            <li>✅ Ahorrar agua en casa.</li>
+            <li>✅ Participar en jornadas de limpieza.</li>
+            <li>✅ Promover el reciclaje.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="progreso">
+    <div class="contenedor">
+        <h2>Meta de Concientización</h2>
+        <div style="background:#ddd;border-radius:20px;">
+            <div style="width:85%;background:#0099ff;color:white;padding:10px;border-radius:20px;">
+                85%
+            </div>
+        </div>
+    </div>
+</section>
+
+           <!--  fin pie de pagina  -->
+
+  <!--  fin social -->
+
+<div class="social">
+   <a href="https://www.facebook.com/" target="_blank" title="FaceBook"><img src="imagen/face.jpg" alt="facebook"></a>
+    <a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="imagen/you.jpg" alt="youtube"></a>
+    <a href="https://x.com/" target="_blank" title="twitter"><img src="imagen/twit.jpg" alt="twitter"></a>
+</div>
 <!-- FIN DE BLOQUE-CONTENIDO -->
 <section class="suscripcion">
     <div class="contenedor">
         <h2>Súmate a la causa por el agua limpia</h2>
-        <form action="#">
+           <form action="https://formspree.io/f/mnjkdlwp" method="POST">
             <input type="text" name="nombre" placeholder="Ingresa tu nombre..." required>
             <input type="email" name="email" placeholder="Ingresa tu correo..." required>
             <input type="submit" name="valor" value="Registrate">
         </form>
     </div>
 </section> <!-- FIN SUSCRIPCION -->
+
 <footer class="piedepagina" role="contentinfo">
     <div class="contenedor">
         <small>Copyright @ 2026 Conciencia Azul - Cuidado del Agua</small>
@@ -116,13 +197,5 @@
         </nav>
     </div>
 </footer>
-           <!--  fin pie de pagina  -->
-<div class="social">
-    <a href="#" title="FaceBook"><img src="imagen/face.jpg" alt="facebook"></a>
-    <a href="#" title="Youtube"><img src="imagen/you.jpg" alt="youtube"></a>
-    <a href="#" title="twitter"><img src="imagen/twit.jpg" alt="twitter"></a>
-</div>
-  <!--  fin social -->
 </body>
 </html>
-
